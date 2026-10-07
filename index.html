@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skorozvon Hub</title>
+<style>
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 720px; margin: 3rem auto; padding: 0 1rem; color: #1a1a1a; }
+  h1 { margin-bottom: .2rem; }
+  a { color: #0b57d0; }
+</style>
+</head>
+<body>
+<h1>Skorozvon Hub</h1>
+<p><em>An internal tool for forwarding call data and call recordings to Google Sheets and Google Drive.</em></p>
+
+<h2>What the app does</h2>
+<p>Skorozvon Hub is a small private service that polls the Skorozvon call-center API for successful calls,
+writes a summary row for each call to a Google Sheet, and uploads the call recording (an MP3 file) to a folder
+on the owner's Google Drive, so the recording can be found later by phone number or tax ID.</p>
+
+<h2>Why it asks for access to Google Drive</h2>
+<p>The app requests access to Google Drive (<code>https://www.googleapis.com/auth/drive</code>) for one purpose only:
+to upload call recordings into a single folder chosen by the account owner and to set a "anyone with the link can view"
+permission on the uploaded files. It does not read, modify or delete any other files.</p>
+
+<h2>Who uses it</h2>
+<p>The app is used by its owner only (a single Google account that authorizes it once). It is not offered to the public.</p>
+
+<h2>Privacy</h2>
+<p>See the <a href="privacy.html">Privacy Policy</a>.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:humvoigroup@gmail.com">humvoigroup@gmail.com</a></p>
+</body>
+</html>
